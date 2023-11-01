@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Bantuan</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="navbar-container">
+        <h1 class="heading">{{judul}}</h1>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="/">Home</a> </li>
+                <li><a href="/tentang">Tentang</a> </li>
+                <li><a href="/bantuan">Bantuan</a> </li>
+                <li><a href="/berita">Berita</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="bantuan-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#192655" fill-opacity="1" d="M0,96L34.3,106.7C68.6,117,137,139,206,133.3C274.3,128,343,96,411,69.3C480,43,549,21,617,42.7C685.7,64,754,128,823,133.3C891.4,139,960,85,1029,101.3C1097.1,117,1166,203,1234,208C1302.9,213,1371,139,1406,101.3L1440,64L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+
+            <div class="faq-container">
+                <div class="faq">
+                    <div class="question">
+                        <h3>Halaman ini digunakan untuk apa?</h3>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Halaman ini digunakan untuk memberikan informasi tentang cuaca sesuai dengan input
+                            pengguna, serta menyediakan halaman tentang diri, bantuan, dan berita, dengan tujuan
+                            memberikan nilai tambah kepada pengguna.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <h3>Apa itu API?</h3>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            API (Application Programming Interface) adalah aturan yang memungkinkan
+                            perangkat lunak berkomunikasi dan berbagi data dengan sistem lain, memungkinkan
+                            pengembang mengintegrasikan atau menggunakan layanan dari aplikasi atau platform yang berbeda.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <h3>API apa yang digunakan dalam aplikasi ini?</h3>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Aplikasi ini menggunakan beberapa API, yaitu Weatherstack, Mapbox,
+                            dan Mediastack. Weatherstack digunakan untuk mengambil informasi cuaca
+                            yang diperlukan untuk layanan pengecekan cuaca. Mapbox digunakan untuk menampilkan peta atau informasi lokasi yang mungkin relevan dengan cuaca atau informasi lainnya dalam aplikasi. Mediastack, kemungkinan, digunakan untuk mengambil berita terkini atau konten media yang dapat disajikan kepada pengguna. Dengan memanfaatkan API ini, aplikasi dapat menyediakan informasi cuaca, peta, dan berita secara efektif kepada pengguna.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <h3>Salah satu pola arstitektur API adalah SOAP</h3>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <img src="img/soap.png">
+                        <p>
+                            1.	Pengguna mengirimkan permintaan ke server dalam format SOAP/XML, yang selanjutnya dikirimkan melalui protokol HTTP ke server.
+                        </p>
+                        <p>
+                            2.	Permintaan XML tersebut diurai untuk mengidentifikasi nama metode dan parameter yang akan diproses, kemudian diteruskan untuk dieksekusi.
+                        </p>
+                        <p>
+                            3.	Server menghasilkan respons dalam bentuk XML yang dikirimkan kembali kepada pengguna. Respons tersebut dapat berisi nilai kembalian (return value) dari pemanggilan metode atau data kesalahan (fault data) jika terjadi kesalahan dalam pemrosesan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="/js/main.js"></script>
+    <footer class="footer-bantuan">
+        <p>Dikembangkan oleh {{nama}}</p>
+    </footer>
+</body>
+</html>

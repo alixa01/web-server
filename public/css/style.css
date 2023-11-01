@@ -1,0 +1,563 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&family=Noto+Sans+JP:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400&display=swap');
+
+
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    min-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*MAIN NAVBARRRRR*/
+
+.navbar-container {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    background-color: #192655;
+}
+
+.navbar-container .heading {
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
+}
+
+.navbar-container .nav-list ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem 4rem;
+    padding: 0;
+}
+
+.navbar-container .nav-list li {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-container .nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: .5rem .8rem;
+    border-radius: 999px;
+    position: relative;
+    opacity: 80%;
+    &:after {
+        content: "";
+        position: absolute;
+        background: #E1AA74;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: .3s ease-in-out;
+    }
+    &:hover:after{
+        width: 100%;
+    }
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+/*=== Navbar Tentang ===*/
+.navbar-container-tentang {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    background-color: #3876BF;
+}
+
+.navbar-container-tentang .heading {
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
+}
+
+.navbar-container-tentang .nav-list ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem 4rem;
+    padding: 0;
+}
+
+.navbar-container-tentang .nav-list li {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-container-tentang .nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: .5rem .8rem;
+    border-radius: 999px;
+    position: relative;
+    opacity: 80%;
+    &:after {
+        content: "";
+        position: absolute;
+        background: #E1AA74;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: .3s ease-in-out;
+    }
+    &:hover:after{
+        width: 100%;
+    }
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+/**/
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+/*cuaca-container*/
+
+.cuaca-container {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #192655;
+    padding: 0;
+}
+
+.cuaca-container h1 {
+    font-family: "Tilt Neon", sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: white;
+    padding-top: 70px;
+}
+.cuaca-container p {
+    font-family: "Tilt Neon", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.container .input{
+    border: 0;
+    outline: none;
+    color: #8b7d77;
+}
+
+.pesan-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    position: absolute;
+    bottom: 47%;
+}
+.pesan-container p{
+    margin: 5px;
+}
+.pesan-container img{
+    margin-top: 10px;
+    width: 100px;
+}
+
+.search_wrap{
+    width: 500px;
+    margin: 38px auto;
+}
+
+.search_wrap .search_box{
+    position: relative;
+    width: 500px;
+    height: 60px;
+}
+
+.search_wrap .search_box .input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: transparent;
+    font-size: 18px;
+}
+
+.search_wrap .search_box .btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background: #DE8F5F;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.search_wrap .search_box .btn:hover{
+    background: #E1AA74;
+}
+
+.search_wrap .search_box .btn:active {
+    background: #DE8F5F;
+}
+.search_wrap .search_box .btn.btn_common .fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 20px;
+}
+
+.search_wrap.search_wrap_1 .search_box .btn{
+    right: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.search_wrap.search_wrap_6 .search_box .input{
+    border-radius: 50px;
+}
+
+.search_wrap.search_wrap_6 .search_box .btn{
+    width: 125px;
+    height: 45px;
+    top: 8px;
+    right: 5px;
+    border-radius: 3px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_wrap.search_wrap_6 .search_box .btn{
+    border-radius: 25px;
+}
+
+.btn button {
+    background: transparent;
+    border: none;
+    width: 90%;
+    height: 90%;
+    cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.search_wrap.search_wrap_6 .search_box .input{
+    padding-right: 145px;
+}
+
+/*       */
+
+
+/*tentang-container*/
+.tentang-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3876BF;
+    padding: 0;
+}
+.content {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+}
+.content-description {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    padding-top: 80px;
+}
+
+.text-animated .greeting {
+    height: 50px;
+    line-height: 50px;
+    color: #DE8F5F;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: .3rem;
+    margin: 0;
+    opacity: 100%;
+}
+
+.content-description .name{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.content-description p{
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: 5px;
+    width: 70%;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 0;
+    opacity: 90%;
+}
+
+.content-description button {
+    padding: .5rem 1.3rem;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+
+    border: 3px solid transparent;
+    background-color: #DE8F5F;
+    cursor: pointer;
+    border-radius: 999px;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+        border: 3px solid #DE8F5F;
+        box-shadow: 0 0 10px 0 #DE8F5F inset, 0 0 10px 4px #DE8F5F;
+        color: white;
+        background-color: transparent;
+    }
+}
+
+.social-media {
+    margin: 5px 0 0 5px;
+}
+.social-media ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: auto;
+    padding: 10px 0;
+}
+.social-media ul li{
+    list-style-type: none;
+}
+.social-media ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    transition: .3s ease-in-out;
+    &:hover{
+        color: white;
+    }
+}
+
+.self-image img {
+    width: 380px;
+    height: 420px;
+    margin: auto;
+    border-radius: 130px 30px;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        transform: scale(1.2) rotate(3deg) skewX(-3deg);
+    }
+}
+/*.content-description{*/
+/*    display: flex;*/
+/*}*/
+.content-description .text-animated {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.content-description .text-animated .dynamic-txts{
+    padding: 0;
+    margin: 0;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.dynamic-txts li{
+    list-style: none;
+    color: #DE8F5F;
+    font-family: 'IBM Plex Mono', sans-serif;
+    padding-right: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+.dynamic-txts li span{
+    position: relative;
+    line-height: 35px;
+    padding-bottom: 35px;
+}
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #3876BF;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+    40%, 60%{
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: 0;
+    }
+}
+
+
+/*BERITTTAAAAAAAA*/
+.berita-container {
+    height: 60%;
+    position: absolute;
+    bottom: 150px;
+    display: flex;
+    justify-content: center;
+}
+.isi-berita {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.isi-berita h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 2rem;
+}
+.isi-berita img {
+    width: 500px;
+}
+.isi-berita p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.5rem;
+}
+.svg-berita {
+    position: relative;
+    top: 30%;
+}
+/*        */
+.footer-berita{
+    position: relative;
+    top: 25%;
+    background-color: #F3F0CA;
+}
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+}
+
+
+/* BAANNNTTTUUUUAAAANNNNN */
+.bantuan-container {
+    height: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-container {
+    position: absolute;
+    top: 40%;
+}
+
+.faq {
+    max-width: 600px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #000000;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3 {
+    color: #000000;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.answer p {
+    color: #000000;
+    padding-top: 1rem;
+    line-height: 1.2;
+    font-size: 1.2rem;
+}
+
+.faq.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active svg {
+    transform: rotate(180deg);
+}
+
+svg {
+    transition: transform .5s ease-in;
+}
+.footer-bantuan{
+    position: relative;
+    top: 60%;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
