@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     pesanJudul.textContent = ''
     pesanGambar.src = ''
     pesanDeskripsi.textContent = 'Sedang memuat berita ..'
-    fetch('http://localhost:4000/infoberita')
+    fetch('/infoberita')
         .then((response) =>{response.json()
             .then((data) => {
                 if (data.error) {

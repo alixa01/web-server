@@ -79,7 +79,7 @@ app.get('/tentang', (req, res) => {
 
 const path = require('path')
 const  hbs = require('hbs')
-
+const port = process.env.PORT || 3000
 // app.use(express.static(dirPublic))
 
 // Mendefinisikan jalur/path untuk konfigurasi Express
@@ -113,6 +113,6 @@ app.get('*', (req, res) => {
 })
 
 
-app.listen(4000, () => {
-    console.log('Server berjalan pada port 4000.')
+app.listen(port, () => {
+    console.log('Server berjalan pada port ' + port)
 })
